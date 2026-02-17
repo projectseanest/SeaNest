@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sea Turtle Nesting Conservation Project Overview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #0B3D2E;
+      --secondary: #6B8E7F;
+      --accent: #A7C7B7;
+      --background: #F4F7F5;
+      --text-dark: #1E1E1E;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+    .navbar {
+      background-color: var(--primary);
+      color: white;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      }
+    .nav-title {
+      font-family: 'Merriweather', serif;
+      font-size: 1.2rem;
+      }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.95rem;
+      }
+
+    .nav-links a:hover,
+    .nav-links .active {
+      text-decoration: underline;
+      }
+
+    /* ---------- HEADER ---------- */
+    header {
+      background: linear-gradient(
+        rgba(11, 61, 46, 0.85),
+        rgba(11, 61, 46, 0.85)
+      ),
+      url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover no-repeat;
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    header h1{
+      font-family: 'Merriweather', serif;
+      font-size: 2.6rem;
+      margin-bottom: 16px;
+    }
+
+    header p {
+      max-width: 720px;
+      margin: 0 auto 32px;
+      font-size: 1.1rem;
+    }
+
+    header a {
+      display: inline-block;
+      padding: 12px 28px;
+      background-color: var(--accent);
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+    }
+
+    header a:hover {
+      background-color: #c6ddd2;
+    }
+
+    /* ---------- MAIN SECTION ---------- */
+    main {
+      padding: 70px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-top: 6px solid var(--secondary);
+      margin-bottom: 30px;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 36px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      font-family: 'Merriweather', serif;
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+    
+    .card h4 {
+      font-family: 'Merriweather', serif;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 18px;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: var(--secondary);
+      font-weight: 500;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+    
+    /* --------SCROLL TO TOP ------ */
+    #topBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width:50px;
+      height:50px;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 10px 14px;
+      background: var(--secondary);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      }
+
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background-color: var(--primary);
+      color: #e6f2ee;
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      max-width: 800px;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<!--NAVIGATION BAR -->
+<nav class="navbar">
+  <div class="nav-title">Sea Turtle Archives</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="map.html">Interactive Map</a></li>
+    <li><a href="overview.html" class="active">Project Overview</a></li>
+    <li><a href="methods.html">Data & Methods</a></li>
+    <li><a href="team.html">Team & Credits</a></li>
+  </ul>
+</nav>
+
+<!-- HEADER -->
+  <header>
+    <h1>Project Overview</h1>
+    <p>
+      Learn about the objectives, background, and environmental significance of this conservation initiative.
+    </p>
+    <a href="#main">Read the Overview</a>
+  </header>
+
+<body>
+<!-- MAIN CONTENT -->
+  <main id ="main">
+    
+    <section class="section">
+      <div class="card">
+       <h3>🎯 Objectives</h3>
+        <p>The objective of this study is to create a website-based mapping and archiving system for sea turtle nesting areas in Dalipe, San Jose, Antique. Specifically, this study aims to:
+</p>
+        <p style="text-indent: 50px;">1. To identify and record sea turtle nesting locations in Funda-Dalipe.</p>
+        <p style="text-indent: 50px;">2. To develop a digital map showing the nesting sites.</p>
+        <p style="text-indent: 50px;">3. To build a website that stores nesting data (date, species, number of nests).</p>
+     </div>
+    
+     <div class="card">
+       <h3>📖Background of the Study</h3>
+       
+        <p style="text-indent: 50px;">San Jose, Antique is recognized as an important coastal nesting ground for marine turtles, particularly in Barangay Funda-Dalipe and Madrangca. Local government records show consistent nesting activity, with 326 green sea turtle hatchlings released between August and October 2021, and 480 hatchlings recorded and released in 2023 (Panay News, 2021; Metropolitan.ph, 2024). In January 2025 alone, 99 sea turtle eggs were documented in a single nest, of which 50 successfully hatched (Petinglay, 2025). These figures indicate that San Jose plays a significant role in the local survival of endangered sea turtle species, especially during the nesting season from June to October. However, despite these numbers, nesting areas remain vulnerable to environmental and human-induced threats.</p>
+
+        <p style="text-indent: 50px;">Although sea turtle conservation efforts exist at the national level, there is a lack of localized, technology-based documentation and mapping systems specifically for San Jose, Antique. The Philippines is home to five sea turtle species, all of which are classified as endangered or critically endangered under national wildlife laws (Turtle Research and Conservation Project in the Philippines, n.d.). Locally, species such as the green sea turtle, olive ridley, and hawksbill turtle have been documented in San Jose (Petinglay, 2021; Defacto, 2025). Despite repeated nesting events, data on nesting locations are often recorded manually and are not centralized or digitally mapped. This limits effective monitoring, rapid response to threats, and long-term conservation planning.
+</p>
+
+        <p style="text-indent: 50px;">The absence of an accessible digital platform has significant implications, especially as nesting areas face increasing risks from coastal development and human disturbance. In 2025, a major coastal infrastructure project in Barangay Funda-Dalipe was halted after it was found to be detrimental to coral reefs and sea turtle nesting grounds, highlighting the urgency of accurate spatial data for environmental decision-making. (Marzan, 2025) This study aims to address this gap by developing a website-based mapping and archiving system for sea turtle nesting areas.  By providing a centralized, accessible platform, it will support researchers and local authorities in monitoring and protecting nests, raise public awareness, and promote community involvement in conservation.</p>
+     </div>
+     <div class="card">
+       <h3>🌱 Significance of the Study</h3>
+       
+        <h4>Wildlife Conservation.</h4>
+        <p>The study will support the protection and awareness of endangered sea turtles through the identifying critical nesting areas that require protection.</p>
+	
+	<h4>Local Government.</h4> 
+	<p> The study will provide a centralized and accessible digital reference to assist in planning conservation actions and coastal management.</p>
+
+
+	<h4>Local Community.</h4> 
+	<p> The study will raise awareness of sea turtle protection and encourage responsible coastal practices.</p>
+
+        <h4>Future Researcgers.</h4> 
+	<p> The study will provide a basis for future research and serve as a foundation for further investigation in sea turtle conservation.</p>
+
+     </div>
+     
+     <div class="card">
+      <h3>📚References {Placeholders}</h3>
+       <p>Panay News (2021). Sea turtle hatchlings released in San Jose, Antique.</p>
+       <p>Metropolitan.ph (2024). Marine conservation efforts in Antique.</p>
+       <p>Petinglay (2025). Sea turtle nesting documentation report.</p>
+       <p>Marzan (2025). Environmental impact assessment of coastal infrastructure.</p>
+     </div>
+    </section>
+  </main>
+  
+<!--SCROLL TO TOP-->
+  <button id="topBtn">↑</button>
+  
+<script>
+  document.getElementById("topBtn").onclick = () =>
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+</script>
+
+<!-- FOOTER -->
+  <footer>
+    <p>
+      © 2026 Sea Turtle Nesting Conservation Project • For academic and environmental purposes only  
+      <br>
+      “Conservation begins with knowledge and awareness.”
+    </p>
+  </footer>
+</body>
+</html>
