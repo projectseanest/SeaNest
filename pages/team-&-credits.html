@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sea Turtle Nesting Conservation Team & Credits</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #0B3D2E;
+      --secondary: #6B8E7F;
+      --accent: #A7C7B7;
+      --background: #F4F7F5;
+      --text-dark: #1E1E1E;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+    .navbar {
+      background-color: var(--primary);
+      color: white;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      }
+    .nav-title {
+      font-family: 'Merriweather', serif;
+      font-size: 1.2rem;
+      }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.95rem;
+      }
+
+    .nav-links a:hover,
+    .nav-links .active {
+      text-decoration: underline;
+      }
+
+    /* ---------- HEADER ---------- */
+    header {
+      background: linear-gradient(
+        rgba(11, 61, 46, 0.85),
+        rgba(11, 61, 46, 0.85)
+      ),
+      url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover no-repeat;
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    header h1{
+      font-family: 'Merriweather', serif;
+      font-size: 2.6rem;
+      margin-bottom: 16px;
+    }
+
+    header p {
+      max-width: 720px;
+      margin: 0 auto 32px;
+      font-size: 1.1rem;
+    }
+
+    header a {
+      display: inline-block;
+      padding: 12px 28px;
+      background-color: var(--accent);
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+    }
+
+    header a:hover {
+      background-color: #c6ddd2;
+    }
+
+    /* ---------- MAIN SECTION ---------- */
+    main {
+      padding: 70px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-top: 6px solid var(--secondary);
+      margin-bottom: 30px;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 36px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      font-family: 'Merriweather', serif;
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+    
+    .card h4 {
+      font-family: 'Merriweather', serif;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 18px;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: var(--secondary);
+      font-weight: 500;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+    
+    /* --------SCROLL TO TOP ------ */
+    #topBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width:50px;
+      height:50px;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 10px 14px;
+      background: var(--secondary);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      }
+
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background-color: var(--primary);
+      color: #e6f2ee;
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      max-width: 800px;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<!--NAVIGATION BAR -->
+<nav class="navbar">
+  <div class="nav-title">Sea Turtle Archives</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="map.html">Interactive Map</a></li>
+    <li><a href="overview.html" class="active">Project Overview</a></li>
+    <li><a href="methods.html">Data & Methods</a></li>
+    <li><a href="team.html">Team & Credits</a></li>
+  </ul>
+</nav>
+
+<!-- HEADER -->
+  <header>
+    <h1>Team & Credits</h1>
+    <p>
+       Meet the research team, contributors, and organizations supporting this conservation effort.
+    </p>
+    <a href="#main">Meet the Team</a>
+  </header>
+
+  <body>
+    <!-- MAIN CONTENT -->
+  <main id ="main">
+    <section class="section">
+      <div class="card">
+        <h3>Team</h3>
+          <p>Lorem ispum ipsum ipsum</p>
+      </div>
+
+      <div class="card">
+        <h3>Credits (References)</h3>
+          <p>Lorem ispum ipsum ipsum</p>
+      </div>
+      
+    </section>
+  </main>
+
+<!--SCROLL TO TOP-->
+  <button id="topBtn">↑</button>
+  
+<script>
+  document.getElementById("topBtn").onclick = () =>
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+</script>
+
+<!-- FOOTER -->
+  <footer>
+    <p>
+      © 2026 Sea Turtle Nesting Conservation Project • For academic and environmental purposes only  
+      <br>
+      “Conservation begins with knowledge and awareness.”
+    </p>
+  </footer>
+  </body>
+</html>
