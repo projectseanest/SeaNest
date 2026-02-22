@@ -394,6 +394,23 @@
     <br>
     <img src="https://images.squarespace-cdn.com/content/v1/5b80290bee1759a50e3a86b3/1538773740390-HMZECXPDQPNL284BQZOM/green-sea-turtle-guyana.jpg?format=750w" alt="Sea Turtle" width="120">
   `);
+
+  const turtleMarker8 = L.marker([10.7489, 121.9413], { icon: turtleIcon }).addTo(map);
+
+  // Third popup
+  turtleMarker8.bindPopup(`
+    <strong>Olive Ridley Sea Turtle</strong>
+    <br>
+      <strong>Species:</strong>Lepidochelys olivacea
+      <strong>General Location:</strong>Barbaza
+      <strong>Nesting Season:</strong>June-December
+      <srong>Sources:</strong> News reports, LGU reports
+    <br>
+      <a href="archives.html" target="_blank">View Species Data</a>
+    <br>
+    <img src="https://www.aquariumofpacific.org/images/made_new/email_images-e1_sea_turtle_600_q85.jpg" alt="Sea Turtle" width="120">
+  `);
+
   // Reset Map Button functionality
   document.getElementById('resetMapBtn').onclick = () => {
     map.setView([10.7655, 121.9417], 13); // Center back to main map area
