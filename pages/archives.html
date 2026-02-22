@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sea Turtle Nesting Conservation</title>
+  <title>SeaNest Archives</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Fonts -->
@@ -29,6 +29,36 @@
       color: var(--text-dark);
       line-height: 1.6;
     }
+    
+    .navbar {
+      background-color: var(--primary);
+      color: white;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      }
+    .nav-title {
+      font-family: 'Merriweather', serif;
+      font-size: 1.2rem;
+      }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.95rem;
+      }
+
+    .nav-links a:hover,
+    .nav-links .active {
+      text-decoration: underline;
+      }
 
     /* ---------- HEADER ---------- */
     header {
@@ -124,6 +154,23 @@
       text-decoration: underline;
     }
 
+    /* --------SCROLL TO TOP ------ */
+    #topBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width:50px;
+      height:50px;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 10px 14px;
+      background: var(--secondary);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      }
+
     /* ---------- FOOTER ---------- */
     footer {
       background-color: var(--primary);
@@ -141,6 +188,19 @@
 </head>
 
 <body>
+  <!--NAVIGATION BAR -->
+<nav class="navbar">
+  <div class="nav-title">Sea Turtle Archives</div>
+  <ul class="nav-links">
+    <li><a href="https://projectseanest.github.io/SeaNest/">Home</a></li>
+    <li><a href="map.html">Interactive Map</a></li>
+	<li><a href="archives.html">Archives</a></li>
+    <li><a href="project-overview.html" class="active">Project Overview</a></li>
+    <li><a href="data-&-methods.html">Data & Methods</a></li>
+    <li><a href="team-&-credits.html">Team & Credits</a></li>
+  </ul>
+</nav>
+  
   <!-- HEADER -->
   <header>
     <h1>Sea Turtle Archives</h1>
@@ -267,6 +327,25 @@
       </div>
     </div>
     </section>
+  </main>
+
+  <!--SCROLL TO TOP-->
+  <button id="topBtn">↑</button>
+  
+<script>
+  document.getElementById("topBtn").onclick = () =>
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+</script>
+
+<!-- FOOTER -->
+  <footer>
+    <p>
+      © 2026 SeaNest • For academic and environmental purposes only  
+      <br>
+      “Conservation begins with knowledge and awareness.”
+    </p>
+  </footer>
+  
 </body>
 
 </html>  
